@@ -1,14 +1,6 @@
 matches:
   
   #Dates and time
-  - trigger: ":date"
-    replace: "{{mydate}}"
-    word: true
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%d/%m/%Y"
 
   - trigger: ":time"
     replace: "{{mytime}}"
@@ -31,7 +23,16 @@ matches:
         type: date
         params:
           format: "%H:%M"
-
+          
+  - trigger: ":today"
+    replace: "{{mydate}}"
+    word: true
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%d/%m/%Y"
+          
   - trigger: ":tomorrow"
     replace: "{{mytime}}"
     word: true
