@@ -1,0 +1,17 @@
+matches:
+
+  - trigger: ";heart"
+    replace: "❤️"
+    word: true
+    propogate_case: true
+
+  - trigger: ";tu"
+    replace: "👍"
+    word: true
+    propogate_case: true
+  
+  - trigger: ";smile"
+    replace: "😊"
+    word: true
+    propogate_case: true
+

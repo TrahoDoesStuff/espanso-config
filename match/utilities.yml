@@ -1,0 +1,53 @@
+matches:
+  
+  #Dates and time
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    word: true
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%d/%m/%Y"
+
+  - trigger: ":time"
+    replace: "{{mytime}}"
+    word: true
+    vars:
+      - name: mytime
+        type: date
+        params:
+          format: "%H:%M"
+
+  - trigger: ":datetime"
+    replace: "{{mydate}}, {{mytime}}"
+    word: true
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%d/%m/%Y"
+      - name: mytime
+        type: date
+        params:
+          format: "%H:%M"
+
+  - trigger: ":tomorrow"
+    replace: "{{mytime}}"
+    word: true
+    vars:
+      - name: mytime
+        type: date
+        params:
+          format: "%d/%m/%Y"
+          offset: 86400
+
+  - trigger: ":yesterday"
+    replace: "{{mytime}}"
+    word: true
+    vars:
+      - name: mytime
+        type: date
+        params:
+          format: "%d/%m/%Y"
+          offset: -86400
