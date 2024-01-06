@@ -1,0 +1,50 @@
+matches:
+  - regex: ":RanNum\\((?P<num1>.*?),(?P<num2>.*?)\\)"
+    replace: "{{Result}}"
+    vars:
+      - name: Result
+        type: shell
+        params:
+          cmd: "expr $(( $ESPANSO_NUM1 + $RANDOM % ($ESPANSO_NUM2 - $ESPANSO_NUM1)))"
+
+  - regex: ":Add\\((?P<num1>.*?),(?P<num2>.*?)\\)"
+    replace: "{{Result}}"
+    vars:
+      - name: Result
+        type: shell
+        params:
+          cmd: "expr $ESPANSO_NUM1 + $ESPANSO_NUM2"
+
+
+  - regex: ":Sub\\((?P<num1>.*?),(?P<num2>.*?)\\)"
+    replace: "{{Result}}"
+    vars:
+      - name: Result
+        type: shell
+        params:
+          cmd: "expr $ESPANSO_NUM1 - $ESPANSO_NUM2"
+
+  - regex: ":Div\\((?P<num1>.*?),(?P<num2>.*?)\\)"
+    replace: "{{Result}}"
+    vars:
+      - name: Result
+        type: shell
+        params:
+          cmd: "expr $ESPANSO_NUM1 / $ESPANSO_NUM2"
+
+  
+  - regex: ":Mod\\((?P<num1>.*?),(?P<num2>.*?)\\)"
+    replace: "{{Result}}"
+    vars:
+      - name: Result
+        type: shell
+        params:
+          cmd: "expr $ESPANSO_NUM1 % $ESPANSO_NUM2"
+
+  - regex: ":Mul\\((?P<num1>.*?),(?P<num2>.*?)\\)"
+    replace: "{{Result}}"
+    vars:
+      - name: Result
+        type: shell
+        params:
+          cmd: "expr $(($ESPANSO_NUM1 * $ESPANSO_NUM2))"
