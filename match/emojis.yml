@@ -15,3 +15,12 @@ matches:
     word: true
     propogate_case: true
 
+  - trigger: ";check"
+    replace: "✅"
+    word: true
+    propogate_case: true
+
+  - trigger: ";cross"
+    replace: "❌"
+    word: true
+    propogate_case: true
