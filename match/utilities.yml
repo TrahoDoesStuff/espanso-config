@@ -2,7 +2,7 @@ matches:
   
   #Dates and time
 
-  - trigger: ":time"
+  - trigger: ":ti"
     replace: "{{mytime}}"
     word: true
     vars:
