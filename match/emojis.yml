@@ -3,29 +3,39 @@ matches:
   - trigger: ";heart"
     replace: "❤️"
     word: true
-    propogate_case: true
+    propagate_case: true
 
   - trigger: ";tu"
     replace: "👍"
     word: true
-    propogate_case: true
+    propagate_case: true
   
   - trigger: ";smile"
     replace: "😊"
     word: true
-    propogate_case: true
+    propagate_case: true
 
   - trigger: ";grin"
     replace: "😃"
     word: true
-    propogate_case: true
+    propagate_case: true
 
   - trigger: ";check"
     replace: "✅"
     word: true
-    propogate_case: true
+    propagate_case: true
 
   - trigger: ";cross"
     replace: "❌"
     word: true
-    propogate_case: true
+    propagate_case: true
+
+  - trigger: ";prideFlag"
+    replace: "🏳️‍🌈"
+    word: true
+    propagate_case: true
+
+  - trigger: ";transFlag"
+    replace: "🏳️‍⚧️"
+    word: true
+    propagate_case: true
