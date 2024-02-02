@@ -32,3 +32,7 @@ matches:
     word: true
     propagate_case: true
 
+  - trigger: "blahaj"
+    replace: "blåhaj"
+    word: true
+    propagate_case: true
