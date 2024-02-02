@@ -38,3 +38,8 @@
 # clipboard_threshold: 100
 
 # For a list of all the available options, visit the official docs at: https://espanso.org/docs/
+
+# Solves replacement errors
+filter_class: "Firefox"
+backspace_delay: 5
+inject_delay: 5
